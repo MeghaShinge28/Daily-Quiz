@@ -1,0 +1,287 @@
+Sr.No	Topic	Question	Choice 1	Choice 2	Choice 3	Choice 4	ANSWER
+1      Variable	"Which of the following statements are correct for variable length arguments?
+
+
+
+"	A. The variable length arguments should be the single argument in a method’s argument list.	
+        B. The variable length arguments should be first argument in a method’s argument list.	
+        C. The variable length arguments should be last argument in a method’s argument list.	"
+        D. The variable length arguments can be used at any place in a method’s argument list."  	
+        Answer==>>D
+
+
+2	static	"Imagine that you are a software programmer and write code for students. During one of the courses you have written the following code:
+
+         class TestQuestion { static int i = 10; static {
+           i+= 10;
+          }
+         public static void main(String s[]) { System.out.println(""i:"" +i);
+        }
+        Static { i+=12;
+       }
+     }
+      What will be the output when the preceding program is compiled and executed?
+     "
+        A. The program will display the output as:  i:32
+	B. The program will generate compilation error.	
+        C. The program will display the output as: i:10	
+        D. The program will throw a runtime exception.
+     Answer==>>	A
+
+
+3	static	"Imagine that you are a software programmer and write code for students. During one of the courses you have written the following code:
+
+class UseStatic { static int a=3; static int b;
+static void meth(int x) { System.out.println(""x = "" + x); System.out.println(""a = "" + a); System.out.println(""b = "" + b);
+}
+static {
+System.out.println(""Static block initialized.""); b = a * 4;
+}
+public static void main(String args[]) { meth(42);
+}
+}
+What will be the output when the preceding program is compiled and executed?
+
+"	 "A. The program will display the output as:
+          x = 42
+          a = 3
+          b = 12"	
+          B. The program will generate compilation error. Static block initialized.	"
+          C. The program will display the output as: 
+          x = 42
+          a = 12
+          b = 3"	
+          D. The program will throw a runtime exception. Static block initialized.
+   Answer==>>	A
+
+
+
+4	STATIC	"Jones is a software developer in an MNC. In one of his projects he wrote a program as:
+
+    class TestQuestion { static int a = 10;
+    public static void main(String s[]) { TestQuestion ob = new TestQuestion(); ob.test(20);
+    }
+    static { System.out.println(a);
+   }
+   static void test(int a) { a+= 12;
+    System.out.print(a);
+  }
+ }
+  What will be the output when the preceding program is compiled and executed?
+
+"	"A. The program will display the output as: 10
+         32"	 
+         B. The program will generate compilation error.	"
+         C. The program will display the output as:  20
+         32"
+	D. The program will display the output as: 20  20	
+   Answer==>>A
+
+
+
+5	   static"Jennie is a software developer in an MNC. In one of her projects, she wrote a program as:
+         class TestQuestion {
+       public static boolean funcA(int a) { boolean b = (a==10)?true:false; System.out.println(b);
+       return b;
+   }
+    public static void main(String args[]) { if(funcA(10) && funcA(5)) System.out.println(""pass"");
+    }
+   }
+   What will be the output when the preceding program is compiled and executed?
+
+
+"	 
+     "A. The program will display the output as: . true
+false"
+     	B. The program will generate compilation error
+	C. The program will display the output as: . Pass	
+        D. The program will throw a runtime exception
+Answer==>>C
+
+
+6	static	"Jaya is a software developer in an MNC. In one of her projects she wrote a program as:
+        class TestQuestion { static char x, y;
+        public static void main(String s[]) { int sum = x+y; System.out.println(sum);
+        }
+       }
+      During compilation and execution of the preceding program, what will happen?
+
+        A. The program will compile and execute successfully, but no output will be shown.
+	B. The program will generate compilation error.	
+        C. The program will display the output as: 0	
+         D. The program will throw a runtime exception.
+Answer==>>C
+7	static	"Jennie is a software developer in an MNC. In one of her projects, she wrote a program as:
+      class Test{
+     static Test msg() { return new Test();
+     }
+    }
+   class TestQuestion extends Test {
+
+    static TestQuestion msg(String s) { System.out.println(s);
+    return new TestQuestion();
+     }
+    public static void main(String s[]) { msg(""hello""); System.out.println(""niraj"");
+   }
+      }
+   What will be the output when the preceding program is compiled and executed?
+
+
+"	"A. The program will display the output as: . hello
+niraj"	
+         B. The program will generate compilation error
+	"C. The program will display the output as:. niraj hello"
+	 D. The program will throw a runtime exception
+	Answer==B
+
+
+8	COMMAND LINE INPUT	"Parul is a student of computer science and she has written a program as:
+
+    class TestQuestion {
+     public static void main(String[] args) { try {
+    if(args.length == 0) return; System.out.println(args[0]);
+    }
+     Finally { System.out.println(""bye!"");
+    }
+   }
+       }
+   What will be the output when the preceding code is compiled and executed?
+"	
+A. The program will compile and execute with 0 command line argument successfully, but no output will be shown.	"
+B. The program will generate compilation error."	"
+C. The program will compile and execute with 0 command line argument successfully, and display the output as:
+bye!"	"
+D. The program will throw a runtime exception
+"Answer==C
+
+
+9	DATATYPE	"Imagine you are a software developer in ABC. Company and write the following program for your project:
+
+class BooleanRep {
+public static void main(String ar[]) {
+boolean status=1; // this statement will generate error if(status) {
+System.out.println(""Here Status= ""+status);
+}
+}
+}
+What will happen when you compile and exceute the preceeding program?
+"	A. The program generates compile time error.	
+        B. The program compiles successfully and displays nothing as output.
+	C. The program compiles successfully but generates runtime exception.	
+        D.The program compiles successfully and displays Here Status= 1 as output	
+     Answer==A
+
+
+
+10	DATATYPE	"Imagine during your preparation of the SCJP exam, you came across the following program:
+
+class AssignRep {
+public static void main(String ar[]) { short b1=2;
+short b2=3;
+short b3=b1+b2; // error in this statement System.out.println(""Result= ""+b3);
+}
+}
+What will happen when you compile and exceute the preceeding program?
+"	A. The program generates compile time error.	
+        B. The program compiles successfully and displays nothing as output.
+	C. The program compiles successfully but generates runtime exception.	
+        D. The program compiles successfully and displays Result= 5 as output.
+Answer==A
+
+
+
+11	DATATYPE	"Dheeraj works as a Programmer in Kogent Solutions Inc. He writes the following program:
+
+class MyQuestion {
+public static void main(String args[]) { int a = 10;
+boolean bool1 = false; boolean bool2 = true; if ((a == 7) && !bool1)
+System.out.print(""Welcome ""); System.out.print(""to "");
+if (( bool1 = true) && bool2) System.out.print(""Java "");
+}
+}
+What will happen when he tries to compile and execute the preceding program?
+
+
+"	A. The program will display: Welcome 	
+        B. The program will display: to Java	
+        C. The program will display: Welcome to 	
+        D. The program will generate compilation error	
+  Answer==B
+
+
+
+12	DATATYPE	"Dheeraj works as a Programmer in Kogent Solutions Inc. He writes the following program:
+class Test {
+int #x = 100; //1
+Float _f = 125.55f; //2
+double ~test = 56.22; //3
+int $i = 15; //4
+}
+What will happen when he tries to compile and execute the preceding program?
+
+"	A. The program will generate a compilation error at the line marked as 1.	"
+        B. The program will generate a compilation error at the line marked as 2."	"
+        C. The program will generate a compilation error at the line marked as 3."	"
+        D. The program will generate a compilation error at the line marked as 4."	
+    Answer==A
+
+
+
+13	ENVIRONMENT VARIABLES	"Mr. Smith works for High tech Inc. He is presently working on an application. There is a class named Automobile.Vehicle.Car in the jar file Car.jar. Now, he wants to run the main() method of the Car class on a Unix system by giving the following command:
+Java Automobile.Vehicle.Car
+How can he do that?
+
+"	"A. By putting Car.jar in directory /stuff/java/ Automobile/ Vehicle and by setting CLASSPATH including
+/stuff/java/Car.jar"	
+          B. By putting Car.jar in directory /stuff/java and by setting CLASSPATH including /stuff/java/Car.jar	"
+          C. By putting Car.jar in directory /stuff/java/ Automobile/ Vehicle and by setting CLASSPATH including
+/stuff/java/*.jar"	"
+          D. There is no way to do that.
+"	 Answer==B
+
+
+14	ENVIRONMENT VARIABLES	"Ria works for NetTech Inc. She is presently working on a project that uses a class named Room. The Room class needs to access another class named Door. The Door class is defined in the JAR file myLib.jar. Which of the following will allow her to do the same at the time of compilation?
+
+"	A. If JAR file is located at $JAVA_HOME/jre/lib/ext/ myLib.jar and class Door is compiled using javac – classpath/lib/mylib.jar	
+        B. If JAR file is located at $JAVA_HOME/jre/classes/myLib.jar and class Door is compiled using javac – classpath/lib/mylib.jar	"
+        C. If JAR file is located at $JAVA_HOME/jre/lib/myLib.jar and class Door is compiled using javac – classpath/lib/mylib.jar"	"
+        D. If JAR file is located at /mine/myLib.jar and the class Door is compiled using
+        javac –classpath/mine/myLib.jar Door.java
+"	Answer==A
+
+
+15	ENVIRONMENT VARIABLES	"Kanishk works as a Programmer for HeadNet Inc. He writes the following program:
+package.com.kogent; class Test {
+public static void main(String ar[]) {
+//code
+}
+The class Test exists in the directory /mine/com/kogent . If CLASSPATH is set to “.”(current directory). Which of the following will allow him to run the Test class?
+
+
+
+
+
+"	A. If class com.kogent.Test is run from com/kogent directory.
+	B. If class mine.com.kogent.Test is run from /mine directory
+	C. If class com.kogent.Test is run from /mine directory	
+        D. If class –classpath/mine com.kogent.Test is run from any directory.	
+   Answer==A
+
+
+16	DATATYPE	"Imagine you are a software developer in ABC. Company and write the following program for your project:
+
+class FloatingPointRep {
+public static void main(String ar[]) {
+float height=6.45; // this statement will generate error System.out.println(""Height= ""+height);
+
+}
+}
+What will happen when you compile and exceute the preceeding program?
+
+
+
+"	A. The program generates compile time error.	
+        B. The program compiles successfully and displays nothing as output.
+	C. The program compiles successfully but generates runtime exception.	"
+        D. The program compiles successfully and displays Height = 6.45 as output."	
+    Answer===A
